@@ -3,6 +3,7 @@
 //
 
 #include "Frame.h"
+#include <stdexcept>
 Frame::Frame(std::shared_ptr<FunctionType> function) {
   params_.resize(function->arguments_.size());
 

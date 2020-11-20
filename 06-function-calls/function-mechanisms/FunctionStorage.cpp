@@ -3,6 +3,7 @@
 //
 
 #include "FunctionStorage.h"
+#include <stdexcept>
 
 FunctionStorage &FunctionStorage::GetInstance() {
     static FunctionStorage storage;

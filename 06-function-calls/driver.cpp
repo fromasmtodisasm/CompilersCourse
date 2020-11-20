@@ -22,7 +22,7 @@ int Driver::parse(const std::string& f) {
     location.initialize(&file);
     scan_begin();
     parser.set_debug_level(trace_parsing);
-    int res = parser();
+    int res = parser.parse();
     std::cout << "parser " << res << std::endl;
     scan_end();
     return res;
